@@ -1,14 +1,22 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Talks and Presentations"
 permalink: /talks/
 author_profile: true
 ---
 
-{% if site.talkmap_link == true %}
+<p>Currently, there are no talks or presentations to display. This section will be updated when I have talks to share.</p>
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+<!-- talkmap should not be displayed when empty -->
+{% assign talkmap_count = 0 %}
+{% for talk in site.talks %}
+  {% assign talkmap_count = talkmap_count | plus: 1 %}
+{% endfor %}
 
+{% if talkmap_count > 0 %}
+  <p>
+    <a href="/talkmap.html">See a map of all the places I've given a talk!</a>
+  </p>
 {% endif %}
 
 {% for post in site.talks reversed %}
