@@ -1,0 +1,21 @@
+.award-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5em;
+  padding: 0.5em 0;
+  border-bottom: 1px solid #eaecef;
+}
+
+.award-item:last-child {
+  border-bottom: none;
+}
+
+.award-item span:first-child {
+  font-weight: 500;
+}
+
+.award-item span:last-child {
+  color: #666;
+  font-size: 0.9em;
+} 
