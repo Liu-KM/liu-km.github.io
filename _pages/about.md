@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Qianli Liu's Homepage"
+title: "LIU Qianli's Homepage"
 author_profile: true
 redirect_from: 
   - /about/
@@ -54,6 +54,9 @@ redirect_from:
 
 .pub-links {
   margin-top: 0.5rem !important;
+  margin-right: 0.5rem !important;
+  text-decoration: none !important;
+  color: #2a76dd !important;
 }
 
 .pub-links a {
@@ -105,6 +108,33 @@ redirect_from:
   display: inline !important;
   flex: 1 !important;
 }
+
+/* 教学经历的样式 */
+.teaching-container {
+  margin-bottom: 2rem !important;
+}
+
+.teaching-item {
+  margin-bottom: 1rem !important;
+  padding-left: 0.5rem !important;
+  border-left: 2px solid #4a86e8 !important;
+}
+
+.teaching-course {
+  font-weight: bold !important;
+  color: #333 !important;
+  margin-bottom: 0.3rem !important;
+}
+
+.teaching-role {
+  display: inline-block !important;
+  margin-left: 0.5rem !important;
+}
+
+.teaching-info {
+  color: #777 !important;
+  font-style: italic !important;
+}
 </style>
 
 Hey, this is Qianli. I am currently a Ph.D. Student at the [PEI Lab](https://peilab.netlify.app/) of Hong Kong University of Science and Technology (HKUST), supervised by Prof. Song Guo. Prior to that, I earned my Bachelor's Degree in Computer Science at Hong Kong Polytechnic University (PolyU).
@@ -142,6 +172,17 @@ Hey, this is Qianli. I am currently a Ph.D. Student at the [PEI Lab](https://pei
       <a href="{{ pub.code_url }}">[Code]</a>
       {% endif %}
     </div>
+  </div>
+{% endfor %}
+</div>
+
+
+## 👨‍🏫 Teaching Experience
+<div class="teaching-container">
+{% for item in site.data.teaching %}
+  <div class="teaching-item">
+    <div class="teaching-course">{{ item.course }}</div>
+    <div class="teaching-info">{{ item.semester }} · {{ item.institution }}</div>
   </div>
 {% endfor %}
 </div>
