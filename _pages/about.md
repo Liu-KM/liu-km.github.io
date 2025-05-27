@@ -135,6 +135,28 @@ redirect_from:
   color: #777 !important;
   font-style: italic !important;
 }
+
+/* 学术服务的样式 */
+.service-container {
+  margin-bottom: 2rem !important;
+}
+
+.service-item {
+  margin-bottom: 1rem !important;
+  padding-left: 0.5rem !important;
+  border-left: 2px solid #5cb85c !important;
+}
+
+.service-title {
+  font-weight: bold !important;
+  color: #333 !important;
+  margin-bottom: 0.3rem !important;
+}
+
+.service-info {
+  color: #777 !important;
+  font-style: italic !important;
+}
 </style>
 
 Hey, this is Qianli. I am currently a Ph.D. Student at the [PEI Lab](https://peilab.netlify.app/) of Hong Kong University of Science and Technology (HKUST), supervised by Prof. Song Guo. Prior to that, I earned my Bachelor's Degree in Computer Science at Hong Kong Polytechnic University (PolyU).
@@ -193,6 +215,16 @@ Hey, this is Qianli. I am currently a Ph.D. Student at the [PEI Lab](https://pei
   <div class="award-item">
     <span class="award-title">{{ award.title }}</span>
     <span class="award-date">{{ award.date | date: "%Y.%m.%d" }}</span>
+  </div>
+{% endfor %}
+</div>
+
+## 🎓 Academic Service
+<div class="service-container">
+{% for service in site.data.academic_service %}
+  <div class="service-item">
+    <div class="service-title">{{ service.title }}</div>
+    <div class="service-info">{{ service.role }} · {{ service.year }}</div>
   </div>
 {% endfor %}
 </div>
