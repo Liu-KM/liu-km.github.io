@@ -1,3 +1,10 @@
+- title: "TITLE_PLACEHOLDER"
+  authors: "AUTHORS_PLACEHOLDER"
+  venue: "INFOCOM 2026"
+  date: 2026-02
+  paper_url: ""  # 可选，如有论文链接请填写
+  code_url: ""   # 可选，如有代码仓库链接请填写
+
 - title: "MELL: Memory Efficient Large Language Model Serving System via Online Dynamic Scheduling"
   authors: "Qianli Liu, Zicong Hong, Peng Li, Fahao Chen and Song Guo"
   venue: "INFOCOM 2025"

@@ -158,6 +158,8 @@ Hey, this is Qianli. I am currently a Ph.D. Student at the [PEI Lab](https://pei
     <div class="pub-authors">{{ pub.authors | replace: "Qianli Liu", "<strong>Qianli Liu</strong>" }}</div>
     <div class="pub-venue">
       {% case pub.venue %}
+        {% when "INFOCOM 2026" %}
+          IEEE International Conference on Computer Communications <span class="venue-abbr">(INFOCOM)</span>, 2026
         {% when "INFOCOM 2025" %}
           IEEE International Conference on Computer Communications <span class="venue-abbr">(INFOCOM)</span>, 2025
         {% else %}
