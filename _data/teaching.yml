@@ -1,4 +1,9 @@
 - course: "COMP1021: Introduction to Computer Science"
-  # role: "Teaching Assistant"
+  role: "Teaching Assistant"
   institution: "The Hong Kong University of Science and Technology (HKUST)"
-  semester: "2025 Spring" 
+  semester: "2025 Spring"
+
+- course: "COMP1021: Introduction to Computer Science"
+  role: "Teaching Assistant"
+  institution: "The Hong Kong University of Science and Technology (HKUST)"
+  semester: "2025 Fall"

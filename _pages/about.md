@@ -184,6 +184,8 @@ Hey, this is Qianli. I am currently a Ph.D. Student at the [PEI Lab](https://pei
           IEEE International Conference on Computer Communications <span class="venue-abbr">(INFOCOM)</span>, 2026
         {% when "INFOCOM 2025" %}
           IEEE International Conference on Computer Communications <span class="venue-abbr">(INFOCOM)</span>, 2025
+        {% when "SIGMOD 2026" %}
+          ACM SIGMOD/PODS International Conference on Management of Data <span class="venue-abbr">(SIGMOD)</span>, 2026
         {% else %}
           {{ pub.venue }}
       {% endcase %}
@@ -205,7 +207,9 @@ Hey, this is Qianli. I am currently a Ph.D. Student at the [PEI Lab](https://pei
 <div class="teaching-container">
 {% for item in site.data.teaching %}
   <div class="teaching-item">
-    <div class="teaching-course">{{ item.course }}</div>
+    <div class="teaching-course">
+      {{ item.course }}{% if item.role %}<span class="teaching-role">({{ item.role }})</span>{% endif %}
+    </div>
     <div class="teaching-info">{{ item.semester }} · {{ item.institution }}</div>
   </div>
 {% endfor %}

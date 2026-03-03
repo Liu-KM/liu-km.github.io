@@ -1,8 +1,14 @@
+- date: Mar. 2026
+  content: "Our work \"KVDrive: A Holistic Multi-Tier KV Cache Management System for Long-Context LLM Inference\" is accepted by SIGMOD 2026."
+
 - date: Feb. 2026
-  content: "Our work \"TITLE_PLACEHOLDER\" is accepted by INFOCOM 2026."
+  content: "Our work \"DIRECTOR: Accelerating Distributed MoE Serving via Online Proactive Expert Placement\" is accepted by INFOCOM 2026."
+
+- date: Feb. 2026
+  content: "Our work \"PPAI: Enabling Personalized LLM Agent Interoperability for Collaborative Edge Intelligence\" is accepted by INFOCOM 2026."
 
 - date: Dec. 2024
-  content: "Our work \"MELL: Memory Efficient Large Language Model Serving System via Online Dynamic Scheduling\" is accepted by INFOCOM 2025." 
+  content: "Our work \"MELL: Memory-Efficient Large Language Model Serving via Multi-GPU KV Cache Management\" is accepted by INFOCOM 2025." 
 
 - date: Sep. 2024
   content: Started Ph.D. in CSE@HKUST, supervised by Prof. Song Guo.

@@ -52,4 +52,4 @@ This repo is intended for GitHub Pages deployment. Push to the default branch an
 ## Notes
 
 - This repository has been cleaned up from most template demo/sample files.
-- Some placeholder content may still exist in data/publication entries (for example `TITLE_PLACEHOLDER`) and should be replaced as you finalize content.
+- Keep publication metadata in sync across `_data/publications.yml`, `_publications/*.md`, and `files/` when adding new papers.

@@ -1,13 +1,27 @@
-- title: "TITLE_PLACEHOLDER"
-  authors: "AUTHORS_PLACEHOLDER"
+- title: "KVDrive: A Holistic Multi-Tier KV Cache Management System for Long-Context LLM Inference"
+  authors: "Jian Lin, Jiazhi Mi, Zicong Hong, Haodong Wang, Qianli Liu, Haoyue Zhang, Peng Li, and Song Guo"
+  venue: "SIGMOD 2026"
+  date: 2026-03
+  paper_url: "/files/KVDrive_SIGMOD2026.pdf"
+  code_url: ""
+
+- title: "DIRECTOR: Accelerating Distributed MoE Serving via Online Proactive Expert Placement"
+  authors: "Qianli Liu, Kaibin Guo, Zicong Hong, Peng Li, Fahao Chen, Haodong Wang, Jian Lin, and Song Guo"
   venue: "INFOCOM 2026"
   date: 2026-02
-  paper_url: ""  # 可选，如有论文链接请填写
-  code_url: ""   # 可选，如有代码仓库链接请填写
+  paper_url: "/files/DIRECTOR_INFOCOM2026.pdf"
+  code_url: ""
 
-- title: "MELL: Memory Efficient Large Language Model Serving System via Online Dynamic Scheduling"
-  authors: "Qianli Liu, Zicong Hong, Peng Li, Fahao Chen and Song Guo"
+- title: "PPAI: Enabling Personalized LLM Agent Interoperability for Collaborative Edge Intelligence"
+  authors: "Zile Wang*, Qianli Liu*, Kaibin Guo, Haodong Wang, Jian Lin, Zicong Hong, and Song Guo (* indicates equal contribution)"
+  venue: "INFOCOM 2026"
+  date: 2026-02
+  paper_url: "/files/PPAI_INFOCOM2026.pdf"
+  code_url: ""
+
+- title: "MELL: Memory-Efficient Large Language Model Serving via Multi-GPU KV Cache Management"
+  authors: "Qianli Liu, Zicong Hong, Peng Li, Fahao Chen, and Song Guo"
   venue: "INFOCOM 2025"
   date: 2024-12
-  paper_url: ""  # 可选，如有论文链接请填写
-  code_url: ""   # 可选，如有代码仓库链接请填写 
+  paper_url: "/files/MELL_INFOCOM2025.pdf"
+  code_url: ""
