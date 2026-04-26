@@ -157,9 +157,52 @@ redirect_from:
   color: #777 !important;
   font-style: italic !important;
 }
+
+.presentation-container {
+  margin-bottom: 2rem !important;
+}
+
+.presentation-item {
+  margin-bottom: 1rem !important;
+  padding-left: 0.5rem !important;
+  border-left: 2px solid #a06cd5 !important;
+}
+
+.presentation-title {
+  font-weight: bold !important;
+  color: #333 !important;
+  margin-bottom: 0.3rem !important;
+}
+
+.presentation-info {
+  color: #777 !important;
+  font-style: italic !important;
+}
+
+.leadership-container {
+  margin-bottom: 2rem !important;
+}
+
+.leadership-item {
+  margin-bottom: 1rem !important;
+  padding-left: 0.5rem !important;
+  border-left: 2px solid #e67e22 !important;
+}
+
+.leadership-title {
+  font-weight: bold !important;
+  color: #333 !important;
+  margin-bottom: 0.3rem !important;
+}
+
+.leadership-info {
+  color: #777 !important;
+  font-style: italic !important;
+}
+
 </style>
 
-Hey, this is Qianli. I am currently a Ph.D. Student at the [PEI Lab](https://peilab.netlify.app/) of Hong Kong University of Science and Technology (HKUST), supervised by Prof. Song Guo. Prior to that, I earned my Bachelor's Degree in Computer Science at Hong Kong Polytechnic University (PolyU).
+Hey, this is Qianli. I am a Ph.D. student at the [PEI Lab](https://peilab.netlify.app/) of the Hong Kong University of Science and Technology (HKUST), advised by Prof. Song Guo. My research focuses on efficient and scalable foundation model serving, with a particular interest in stateful AI systems, inference-state management, distributed MoE serving, and KV-cache management. Prior to HKUST, I received my B.Sc. in Computing with a minor in Applied Mathematics from the Hong Kong Polytechnic University (PolyU).
 
 ## 🔥 News
 <div class="news-container">
@@ -230,6 +273,28 @@ Hey, this is Qianli. I am currently a Ph.D. Student at the [PEI Lab](https://pei
   <div class="service-item">
     <div class="service-title">{{ service.title }}</div>
     <div class="service-info">{{ service.role }} · {{ service.year }}</div>
+  </div>
+{% endfor %}
+</div>
+
+
+## 🎤 Presentations
+<div class="presentation-container">
+{% for item in site.data.presentations %}
+  <div class="presentation-item">
+    <div class="presentation-title">{{ item.title }}</div>
+    <div class="presentation-info">{{ item.type }} · {{ item.location }} · {{ item.date }}</div>
+  </div>
+{% endfor %}
+</div>
+
+## 🤝 Leadership & Activities
+<div class="leadership-container">
+{% for item in site.data.leadership %}
+  <div class="leadership-item">
+    <div class="leadership-title">{{ item.role }} · {{ item.organization }}</div>
+    <div class="leadership-info">{{ item.period }}</div>
+    <div>{{ item.description }}</div>
   </div>
 {% endfor %}
 </div>
