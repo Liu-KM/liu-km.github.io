@@ -86,6 +86,15 @@ redirect_from:
 /* 修改新闻项的样式 */
 .news-container {
   margin-bottom: 2rem !important;
+  max-height: 16rem;
+  overflow-y: auto;
+  padding-right: 0.75rem;
+  scrollbar-gutter: stable;
+}
+
+.news-container:focus-visible {
+  outline: 2px solid #2a76dd;
+  outline-offset: 4px;
 }
 
 .news-item {
@@ -202,10 +211,10 @@ redirect_from:
 
 </style>
 
-Hey, this is Qianli. I am a Ph.D. student at the [PEI Lab](https://peilab.netlify.app/) of the Hong Kong University of Science and Technology (HKUST), advised by Prof. Song Guo. My research focuses on efficient and scalable foundation model serving, with a particular interest in stateful AI systems, inference-state management, distributed MoE serving, and KV-cache management. Prior to HKUST, I received my B.Sc. in Computing with a minor in Applied Mathematics from the Hong Kong Polytechnic University (PolyU).
+Hey, this is Qianli. I am a third-year Ph.D. candidate at the [PEI Lab](https://peilab.netlify.app/) of the Hong Kong University of Science and Technology (HKUST), advised by Prof. Song Guo. My research focuses on efficient and scalable foundation model serving, with a particular interest in stateful AI systems, inference-state management, distributed MoE serving, and KV-cache management. Prior to HKUST, I received my B.Sc. in Computing with a minor in Applied Mathematics from the Hong Kong Polytechnic University (PolyU).
 
 ## 🔥 News
-<div class="news-container">
+<div class="news-container" role="region" aria-label="News" tabindex="0">
 {% for item in site.data.news %}
 <div class="news-item">
   <span class="news-date">[{{ item.date }}]</span>
