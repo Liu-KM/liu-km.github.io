@@ -1,3 +1,10 @@
+- title: "TwinQuant: Learnable Subspace Decomposition for 4-Bit LLM Quantization"
+  authors: "Haodong Wang, Junjie Liu, Zicong Hong, Qianli Liu, Jian Lin, Song Guo, and Xu Chen"
+  venue: "International Conference on Machine Learning (ICML), 2026"
+  date: 2026-07
+  paper_url: "https://proceedings.mlr.press/v306/wang26el.html"
+  code_url: ""
+
 - title: "KVDrive: A Holistic Multi-Tier KV Cache Management System for Long-Context LLM Inference"
   authors: "Jian Lin, Jiazhi Mi, Zicong Hong, Haodong Wang, Qianli Liu, Haoyue Zhang, Peng Li, and Song Guo"
   venue: "SIGMOD 2026"
