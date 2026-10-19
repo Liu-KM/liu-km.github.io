@@ -38,7 +38,7 @@
   left: 0;
   top: 0.1rem;
   font-size: 0.85rem;
-  color: var(--global-text-color-light);
+  color: color-mix(in srgb, var(--global-text-color) 82%, var(--global-bg-color));
 }
 .pub-title, .teaching-course, .service-title, .presentation-title,
 .leadership-title, .award-title {
@@ -59,7 +59,7 @@
 .pub-venue, .teaching-info, .service-info, .presentation-info,
 .leadership-info, .award-date {
   font-size: 0.85rem;
-  color: var(--global-text-color-light);
+  color: color-mix(in srgb, var(--global-text-color) 82%, var(--global-bg-color));
   line-height: 1.45;
   font-style: normal;
 }
@@ -81,7 +81,7 @@
 }
 .news-container:focus-visible { outline: 2px solid var(--global-link-color); outline-offset: 4px; }
 .news-item { display: grid; grid-template-columns: 5.6rem minmax(0, 1fr); gap: 0.65rem; margin-bottom: 0.65rem; }
-.news-date { font-size: 0.82rem; color: var(--global-text-color-light); padding-top: 0.06rem; white-space: nowrap; }
+.news-date { font-size: 0.82rem; color: color-mix(in srgb, var(--global-text-color) 82%, var(--global-bg-color)); padding-top: 0.06rem; white-space: nowrap; }
 .news-content { font-size: 0.9rem; }
 
 @media (min-width: 925px) {
