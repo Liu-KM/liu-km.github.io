@@ -1,4 +1,103 @@
-/* 
- * 自定义样式已移至对应页面内部直接定义
- * 这个文件保留用于将来可能的全站样式
- */ 
+/* Shared typography and spacing for the academic homepage. */
+.page {
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+.page__title {
+  font-size: 1.55rem;
+  line-height: 1.25;
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.02em;
+}
+.page__content h2 {
+  font-size: 1.15rem;
+  line-height: 1.35;
+  margin: 1.8rem 0 0.85rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--global-border-color);
+  letter-spacing: -0.01em;
+}
+.page__content p { margin-bottom: 0.9rem; }
+.page__content a { text-underline-offset: 0.16em; }
+.masthead__inner-wrap { padding-top: 0.8rem; padding-bottom: 0.8rem; }
+.masthead__menu-item { font-size: 0.9rem; }
+.author__name { font-size: 1rem; line-height: 1.35; margin-top: 0.65rem; }
+.author__bio, .sidebar p, .sidebar li { font-size: 0.75rem; line-height: 1.5; }
+.author__urls { overflow-wrap: anywhere; }
+.page__footer { font-size: 0.75rem; }
+
+.publication, .pub-list, .news-container, .teaching-container,
+.awards-container, .service-container, .presentation-container,
+.leadership-container { margin: 0; }
+.pub-list { margin-top: 1rem; }
+.pub-item, .teaching-item, .service-item, .presentation-item,
+.leadership-item, .award-item { margin-bottom: 1rem; line-height: 1.45; }
+.pub-item { position: relative; padding-left: 1.65rem; }
+.pub-number {
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+}
+.pub-title, .teaching-course, .service-title, .presentation-title,
+.leadership-title, .award-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 0.2rem;
+  color: var(--global-text-color);
+}
+.pub-title a, .pub-title a:visited, .pub-title a:hover, .pub-title a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+.pub-title a:hover, .pub-title a:focus-visible {
+  text-decoration: underline;
+}
+.pub-authors { font-size: 0.85rem; margin-bottom: 0.15rem; }
+.pub-venue, .teaching-info, .service-info, .presentation-info,
+.leadership-info, .award-date {
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+  line-height: 1.45;
+  font-style: normal;
+}
+.venue-abbr { font-style: normal; }
+.pub-code { margin-left: 0.4rem; }
+.teaching-role { margin-left: 0.35rem; font-weight: 400; font-size: 0.85rem; }
+.leadership-item > div:last-child:not(.leadership-info) {
+  font-size: 0.85rem;
+  margin-top: 0.2rem;
+}
+.award-item { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 1rem; }
+.award-date { margin-left: auto; white-space: nowrap; }
+
+.news-container {
+  max-height: 12rem;
+  overflow-y: auto;
+  padding-right: 0.65rem;
+  scrollbar-gutter: stable;
+}
+.news-container:focus-visible { outline: 2px solid var(--global-link-color); outline-offset: 4px; }
+.news-item { display: grid; grid-template-columns: 5.6rem minmax(0, 1fr); gap: 0.65rem; margin-bottom: 0.65rem; }
+.news-date { font-size: 0.82rem; color: var(--global-text-color-light); padding-top: 0.06rem; white-space: nowrap; }
+.news-content { font-size: 0.9rem; }
+
+@media (min-width: 925px) {
+  .page { padding-right: 4%; }
+}
+@media (max-width: 600px) {
+  .page { font-size: 1rem; }
+  .page__title { font-size: 1.4rem; }
+  .page__content h2 { margin-top: 1.5rem; }
+  .pub-title, .teaching-course, .service-title, .presentation-title,
+  .leadership-title, .award-title { font-size: 1rem; }
+  .pub-authors, .pub-venue, .teaching-info, .service-info,
+  .presentation-info, .leadership-info, .award-date,
+  .leadership-item > div:last-child:not(.leadership-info) { font-size: 0.9rem; }
+  .news-item { grid-template-columns: 4.9rem minmax(0, 1fr); gap: 0.5rem; }
+  .news-content { font-size: 0.95rem; }
+  .pub-item { padding-left: 1.4rem; }
+  .award-date { margin-left: 0; }
+}
