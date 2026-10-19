@@ -14,55 +14,61 @@ redirect_from:
 }
 
 .pub-item {
-  position: relative !important;
-  margin-bottom: 1.5rem !important;
-  padding-left: 2.5rem !important; /* 增加左侧填充以容纳序号 */
+  position: relative;
+  margin-bottom: 1.1rem;
+  padding-left: 1.65rem;
+  line-height: 1.45;
 }
 
 .pub-number {
-  position: absolute !important;
-  left: 0 !important;
-  top: 0.1rem !important;
-  font-weight: bold !important;
-  color: #666 !important;
-  font-size: 1rem !important;
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  color: #666;
+  font-size: 0.85rem;
 }
 
 .pub-title {
-  font-weight: bold !important;
-  font-size: 1.1rem !important;
-  margin-bottom: 0.5rem !important;
-  color: #2a2a2a !important;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  color: #2a2a2a;
+}
+
+.pub-title a,
+.pub-title a:visited,
+.pub-title a:hover,
+.pub-title a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pub-title a:hover,
+.pub-title a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
 .pub-authors {
-  margin-bottom: 0.5rem !important;
-  font-size: 0.95rem !important;
-  color: #3a3a3a !important;
+  margin-bottom: 0.15rem;
+  font-size: 0.85rem;
+  color: #3a3a3a;
 }
 
 .pub-venue {
-  font-style: italic !important;
-  margin-bottom: 0.5rem !important;
-  color: #555 !important;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #555;
 }
 
 .venue-abbr {
-  font-style: normal !important;
-  color: #777 !important;
+  font-style: normal;
+  color: #777;
 }
 
-.pub-links {
-  margin-top: 0.5rem !important;
-  margin-right: 0.5rem !important;
-  text-decoration: none !important;
-  color: #2a76dd !important;
-}
-
-.pub-links a {
-  margin-right: 0.5rem !important;
-  text-decoration: none !important;
-  color: #2a76dd !important;
+.pub-code {
+  margin-left: 0.4rem;
+  font-style: normal;
 }
 
 .award-item {
@@ -228,7 +234,7 @@ Hey, this is Qianli. I am a third-year Ph.D. candidate at the [PEI Lab](https://
 {% for pub in site.data.publications %}
   <div class="pub-item">
     <div class="pub-number">[{{ forloop.index }}]</div>
-    <div class="pub-title">{{ pub.title }}</div>
+    <div class="pub-title">{% if pub.paper_url and pub.paper_url != "" %}<a href="{{ pub.paper_url }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</div>
     <div class="pub-authors">{{ pub.authors | replace: "Qianli Liu", "<strong>Qianli Liu</strong>" }}</div>
     <div class="pub-venue">
       {% case pub.venue %}
@@ -241,13 +247,8 @@ Hey, this is Qianli. I am a third-year Ph.D. candidate at the [PEI Lab](https://
         {% else %}
           {{ pub.venue }}
       {% endcase %}
-    </div>
-    <div class="pub-links">
-      {% if pub.paper_url != "" %}
-      <a href="{{ pub.paper_url }}">[Paper]</a>
-      {% endif %}
-      {% if pub.code_url != "" %}
-      <a href="{{ pub.code_url }}">[Code]</a>
+      {% if pub.code_url and pub.code_url != "" %}
+      <a class="pub-code" href="{{ pub.code_url }}">[Code]</a>
       {% endif %}
     </div>
   </div>
